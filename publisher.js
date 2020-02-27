@@ -2,7 +2,7 @@ const amqp = require("amqplib"); //amqp - advanced message queue protocol
 
 const port = 5672;
 const server = "localhost";
-const message = {number:2};
+const message = {number: process.argv[2]}; 
 connect();
 async function connect() {
     try {
